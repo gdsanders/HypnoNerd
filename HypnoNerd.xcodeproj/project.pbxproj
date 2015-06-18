@@ -19,6 +19,7 @@
 		6390B82F1B326A8700F83DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8171B326A8700F83DB2 /* UIKit.framework */; };
 		6390B8371B326A8700F83DB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6390B8351B326A8700F83DB2 /* InfoPlist.strings */; };
 		6390B8391B326A8700F83DB2 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390B8381B326A8700F83DB2 /* HypnoNerdTests.m */; };
+		6390B8441B326B0300F83DB2 /* DEIHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390B8431B326B0300F83DB2 /* DEIHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		6390B8341B326A8700F83DB2 /* HypnoNerdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoNerdTests-Info.plist"; sourceTree = "<group>"; };
 		6390B8361B326A8700F83DB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6390B8381B326A8700F83DB2 /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		6390B8421B326B0300F83DB2 /* DEIHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIHypnosisView.h; sourceTree = "<group>"; };
+		6390B8431B326B0300F83DB2 /* DEIHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				6390B8321B326A8700F83DB2 /* HypnoNerdTests */,
 				6390B8121B326A8700F83DB2 /* Frameworks */,
 				6390B8111B326A8700F83DB2 /* Products */,
+				6390B8421B326B0300F83DB2 /* DEIHypnosisView.h */,
+				6390B8431B326B0300F83DB2 /* DEIHypnosisView.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6390B8201B326A8700F83DB2 /* main.m in Sources */,
+				6390B8441B326B0300F83DB2 /* DEIHypnosisView.m in Sources */,
 				6390B8241B326A8700F83DB2 /* DEIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

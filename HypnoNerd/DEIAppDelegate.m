@@ -7,6 +7,8 @@
 //
 
 #import "DEIAppDelegate.h"
+#import "DEIHypnosisViewController.h"
+#import "DEIReminderViewController.h"
 
 @implementation DEIAppDelegate
 
@@ -14,6 +16,17 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    DEIHypnosisViewController *hvc = [[DEIHypnosisViewController alloc] init];
+    
+    // Get a pointer to an object that represents the app bundle
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Look in the appBundle for the file DEIReminderView Controller.xib
+    DEIReminderViewController *rvc = [[DEIReminderViewController alloc] init];
+    self.window.rootViewController = rvc;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

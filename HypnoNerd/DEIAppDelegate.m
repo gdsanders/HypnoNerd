@@ -9,6 +9,7 @@
 #import "DEIAppDelegate.h"
 #import "DEIHypnosisViewController.h"
 #import "DEIReminderViewController.h"
+#import "DEIQuizViewController.h"
 
 @implementation DEIAppDelegate
 
@@ -19,13 +20,17 @@
     
     DEIHypnosisViewController *hvc = [[DEIHypnosisViewController alloc] init];
     
-    // Get a pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
-    // Look in the appBundle for the file DEIReminderView Controller.xib
     DEIReminderViewController *rvc = [[DEIReminderViewController alloc] init];
-    self.window.rootViewController = rvc;
     
+    DEIQuizViewController *qvc = [[DEIQuizViewController alloc] init];
+    
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
+    
+    
+    self.window.rootViewController = tabBarController;
+
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
